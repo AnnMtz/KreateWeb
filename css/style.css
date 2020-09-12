@@ -1,5 +1,6 @@
 *{
     font-family: Fuente Segoe UI;
+    box-sizing: border-box;
 }
 
 body{
@@ -68,6 +69,10 @@ body{
     text-align: center;
 }
 
+#plan {
+    margin-top: 48px;
+}
+
 #info {
     justify-content: flex-end;
     display: flex;
@@ -81,6 +86,9 @@ body{
 }
 
 /*footer*/
+footer {
+    overflow: hidden;
+}
 .footer {
     display: flex;
     justify-content: space-between;
@@ -93,9 +101,12 @@ button {
     width: 110px;
     border-radius: 25px;
     background-color: #dc3935d1;
-    color: #000486;
     font-weight: bold;
     margin-right: 30px;
+}
+
+button a {
+    color: #000486;
 }
 
 footer .cards {
@@ -124,4 +135,162 @@ footer .cards {
     padding-right: 4%;
     padding-left: 0;
     align-items: center;
+}
+
+/*ABOUT.HTML*/
+.container-fluid {
+    padding: 0px;
+    overflow: hidden;
+}
+.about-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    background-color: #1f1e1e;
+    margin-top: 0px;
+}
+
+.image {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#company {
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.about-img h1{
+    margin-top: 40px;
+    color: #3D51D0;
+}
+
+.about-img h3 {
+    color: #002bffd9;
+    opacity: 53%;
+    font-style: italic;
+}
+
+/*card-images*/
+.card {
+    background: none;
+    border: none;
+}
+
+.card-vmv {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#values-list {
+    list-style: none;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+.card-text {
+    font-style: italic;
+}
+
+/*CONTACT.HTML*/
+.contact-icons {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card {
+    color: #000000c7;
+}
+
+form button {
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 22%;
+    }
+
+    .card-img {
+        height: 23%;
+    }
+
+    #plan {
+        margin-top: 28px;
+    }
+
+    footer {
+        overflow: hidden;
+    }
+ 
+    .footer {
+        margin-left: 13px;
+        margin-right: 6px;
+    }
+
+    #face{
+        width: 33%;
+    }
+    .social-media {
+        padding-right: 7%;
+    }
+
+    .redes {
+        height: 44%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 35%;
+    }
+
+    .card-img {
+        height: 48%;
+    }
+
+    .footer {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #face {
+        width: 20%;
+    }
+
+    .social-media {
+        padding-right: 11%;
+    }
+
+    #company {
+        width: 230px;
+        height: 230px;
+    }
+
+    .about-img h1 {
+        margin-left: 5%;
+        font-size: 29px;
+    }
+
+    .about-img h3 {
+        font-size: 16px;
+    }
 }
