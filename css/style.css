@@ -21,7 +21,7 @@ body{
 }
 
 .logo {
-    width: 18%;
+    width: 54%;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -94,6 +94,9 @@ footer {
     justify-content: space-between;
 }
 
+#nav-f{
+    margin-left: 15px;
+}
 button {
     margin-bottom: auto;
     margin-top: auto;
@@ -224,13 +227,53 @@ form button {
     margin-top: 30px;
 }
 
+/*ADDITIONAL.HTML*/
+blockquote {
+    margin: 43px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.card-title-add{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#redes {
+    margin-left: 3em;
+}
+
+#redes li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1366px){
+    #values-list{
+        margin-left: 100px;
+    }
+
+    .card-text{
+        margin-right: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .logo {
-        width: 22%;
+        width: 50%;
     }
 
     .card-img {
         height: 23%;
+    }
+
+    #values-list{
+        margin-left: 20px;
+    }
+    
+    .card-text{
+        margin-right: 10px;
     }
 
     #plan {
@@ -259,17 +302,42 @@ form button {
 }
 
 @media screen and (max-width: 480px) {
+    #nav-a{
+        display: inline-flex;
+        width: 50%;
+    }
     .logo {
-        width: 35%;
+        width: 90%;
     }
 
+    .card{
+        margin: 0px!important;
+    }
+
+    .card-title-add{
+        margin-bottom: 20px;
+    }
+
+    .card-text-add{
+        margin-left: 25px;
+        margin-right: 40px;
+        text-align: justify;
+    }
     .card-img {
         height: 48%;
+    }
+    .contact-card card-body{
+        margin-right: 20px;
     }
 
     .footer {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    #nav-f{
+        width: 80%;
+        margin-left: 10px;
     }
 
     #face {
@@ -294,3 +362,4 @@ form button {
         font-size: 16px;
     }
 }
+
